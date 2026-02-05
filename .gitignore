@@ -3,7 +3,6 @@ node_modules
 .env
 docker-compose.extra.yml
 dist
-*.bun-build
 pnpm-lock.yaml
 bun.lock
 bun.lockb
@@ -52,7 +51,6 @@ apps/ios/fastlane/screenshots/
 apps/ios/fastlane/test_output/
 apps/ios/fastlane/logs/
 apps/ios/fastlane/.env
-apps/ios/fastlane/report.xml
 
 # fastlane build artifacts (local)
 apps/ios/*.ipa
@@ -60,7 +58,6 @@ apps/ios/*.dSYM.zip
 
 # provisioning profiles (local)
 apps/ios/*.mobileprovision
-.env
 
 # Local untracked files
 .local/
@@ -71,3 +68,14 @@ USER.md
 
 # local tooling
 .serena/
+
+# Dev sandbox local config
+sandbox/.dev-sandbox.env.local
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/.gitignore
+/.idea/MarsCodeWorkspaceAppSettings.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/myopenclaw.iml
+/.idea/vcs.xml

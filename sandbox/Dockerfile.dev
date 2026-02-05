@@ -1,0 +1,48 @@
+# OpenClaw 开发沙盒 Dockerfile
+# 用途：在隔离的 Docker 容器中运行 OpenClaw 开发环境
+
+FROM debian:bookworm-slim
+
+ENV DEBIAN_FRONTEND=noninteractive
+ENV NODE_ENV=development
+
+# 安装基础工具 + Node.js 依赖
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    bash \
+    curl \
+    git \
+    jq \
+    python3 \
+    python3-pip \
+    ripgrep \
+    ca-certificates \
+    procps \
+    xz-utils \
+    unzip \
+    && rm -rf /var/lib/apt/lists/*
+
+# 安装 Node.js 22 (LTS) - 自动检测架构
+RUN ARCH=$(dpkg --print-architecture) && \
+    if [ "$ARCH" = "arm64" ]; then \
+        NODE_ARCH="linux-arm64"; \
+    else \
+        NODE_ARCH="linux-x64"; \
+    fi && \
+    curl -fsSL "https://nodejs.org/dist/v22.13.1/node-v22.13.1-${NODE_ARCH}.tar.xz" | tar -xJf - -C /usr/local --strip-components=1
+
+# 安装 Bun（OpenClaw 需要）
+RUN curl -fsSL https://bun.sh/install | bash
+ENV PATH="/root/.bun/bin:${PATH}"
+
+# 安装 pnpm
+RUN npm install -g pnpm
+
+# 启用 corepack
+RUN corepack enable
+
+WORKDIR /workspace
+
+# 暴露网关端口
+EXPOSE 18789 18790
+
+CMD ["bash"]
