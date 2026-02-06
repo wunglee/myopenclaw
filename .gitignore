@@ -79,3 +79,4 @@ sandbox/.dev-sandbox.env.local
 /.idea/modules.xml
 /.idea/myopenclaw.iml
 /.idea/vcs.xml
+/learning/.ipynb_checkpoints/
