@@ -1,0 +1,16 @@
+{
+  "name": "commander-demo",
+  "version": "1.0.0",
+  "description": "Commander.js 学习示例项目",
+  "main": "demo.js",
+  "scripts": {
+    "start": "node demo.js",
+    "test": "echo \"运行测试命令...\" && node demo.js --help"
+  },
+  "keywords": ["commander", "cli", "demo"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.0.0"
+  }
+}
