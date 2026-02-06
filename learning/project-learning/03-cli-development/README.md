@@ -1,24 +1,19 @@
-# 03 CLI 开发
+# 03: CLI 开发
 
-命令行界面开发实战。
+## 章节列表
 
-## 目录
+1. **03-01-cli-commanderjs.ipynb** - Commander.js 基础
+2. **03-02-interactive-cli.ipynb** - 交互式 CLI
+3. **03-03-chalk-progress.ipynb** - Chalk 与进度条
+4. **03-04-di-hooks.ipynb** - 依赖注入与钩子系统
 
-| 文件 | 内容 |
-|------|------|
-| `03-01-cli-commanderjs.ipynb` | Commander.js 基础 |
-| `03-02-interactive-cli.ipynb` | Inquirer 与 @clack/prompts 交互式 CLI |
+## 学习目标
 
-## 学习要点
+- 使用 Commander.js 创建命令行工具
+- 实现交互式命令行界面
+- 掌握依赖注入模式
+- 实现可扩展的钩子系统
 
-- 命令行参数解析
-- 子命令设计
-- 交互式提示
-- 进度条与 Spinner
-- OpenClaw CLI 架构
+## 预计学习时间
 
-## 练习
-
-1. 创建项目脚手架工具
-2. 实现带进度条的文件处理
-3. 设计配置向导
+4 课时

@@ -1,21 +1,18 @@
-# 14. DevOps 与部署
+# 14: DevOps 与部署
 
-Docker 容器化部署。
+## 章节列表
 
-## 目录
-
-| 文件 | 内容 |
-|------|------|
-| `14-01-docker-basics.ipynb` | Dockerfile、Compose、多阶段构建 |
+1. **14-01-docker-basics.ipynb** - Docker 基础
+2. **14-02-cloud-deployment.ipynb** - 云部署 (Fly.io, Cloudflare)
+3. **14-03-systemd-launchd.ipynb** - systemd 与 launchd
 
 ## 学习目标
 
-- 掌握 Docker 基础
-- 能容器化应用
-- 理解多阶段构建
+- 编写 Dockerfile
+- 使用 Docker Compose
+- 部署到 Fly.io 和 Cloudflare
+- 配置 systemd/launchd 服务
 
-## 练习
+## 预计学习时间
 
-1. 容器化你的 Node.js 应用
-2. 编写 docker-compose.yml
-3. 部署到云服务器
+3 课时

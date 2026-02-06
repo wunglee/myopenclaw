@@ -1,22 +1,17 @@
-# 08. 数据验证
+# 08: 数据验证
 
-使用 Zod 进行类型安全的 Schema 验证。
+## 章节列表
 
-## 目录
-
-| 文件 | 内容 |
-|------|------|
-| `08-01-zod-basics.ipynb` | Zod 基础、对象验证、类型推断 |
+1. **08-01-zod-basics.ipynb** - Zod 基础
+2. **08-02-typebox-ajv.ipynb** - TypeBox 和 Ajv
 
 ## 学习目标
 
-- 掌握 Zod Schema 定义
-- 理解类型推断机制
-- 能验证 API 输入输出
+- 使用 Zod 进行运行时验证
+- 使用 TypeBox 生成 JSON Schema
+- 使用 Ajv 高性能验证
+- 与 Express/Fastify 集成
 
-## 练习
+## 预计学习时间
 
-为以下场景设计 Zod Schema：
-1. 用户注册表单
-2. API 响应格式
-3. 配置文件结构
+2 课时

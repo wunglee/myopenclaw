@@ -1,21 +1,17 @@
-# 15. 移动端与桌面端
+# 15: 移动端与桌面端
 
-跨平台开发入门。
+## 章节列表
 
-## 目录
-
-| 文件 | 内容 |
-|------|------|
-| `15-01-cross-platform.ipynb` | Electron、React Native 基础 |
+1. **15-01-cross-platform.ipynb** - 跨平台开发
+2. **15-02-bonjour-mdns.ipynb** - Bonjour/mDNS 服务发现
 
 ## 学习目标
 
-- 了解 Electron 桌面开发
-- 了解 React Native 移动开发
-- 理解 OpenClaw 的跨平台架构
+- Electron 桌面应用开发
+- React Native 移动开发
+- SwiftUI 原生开发
+- 使用 mDNS 发现局域网服务
 
-## 练习
+## 预计学习时间
 
-1. 创建一个 Electron 应用
-2. 运行 React Native 示例
-3. 分析 OpenClaw 的移动端代码
+2 课时

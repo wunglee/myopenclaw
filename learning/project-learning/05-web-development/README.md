@@ -1,23 +1,17 @@
-# 05. Web 开发基础
+# 05: Web 开发
 
-Express 与 Fastify 两大框架入门。
+## 章节列表
 
-## 目录
-
-| 文件 | 内容 |
-|------|------|
-| `05-01-express-basics.ipynb` | Express 基础、路由、中间件 |
-| `05-02-fastify-basics.ipynb` | Fastify 基础、Schema验证、插件 |
+1. **05-01-express-basics.ipynb** - Express 基础
+2. **05-02-fastify-basics.ipynb** - Fastify 基础
 
 ## 学习目标
 
-- 掌握 Express/Fastify 基础
-- 理解路由、中间件、插件
-- 能构建简单 REST API
+- 使用 Express 创建 Web 服务
+- 使用 Fastify 高性能框架
+- 理解中间件和路由
+- 处理请求和响应
 
-## 练习项目
+## 预计学习时间
 
-用 Fastify 构建一个用户管理 API，包含：
-- 用户 CRUD
-- 请求验证
-- 错误处理
+2 课时

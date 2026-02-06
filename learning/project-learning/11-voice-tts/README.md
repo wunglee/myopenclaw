@@ -1,21 +1,17 @@
-# 11. 语音与 TTS
+# 11: 语音与 TTS
 
-文本转语音实现。
+## 章节列表
 
-## 目录
-
-| 文件 | 内容 |
-|------|------|
-| `11-01-elevenlabs-tts.ipynb` | ElevenLabs API、流式生成、多语音 |
+1. **11-01-elevenlabs-tts.ipynb** - ElevenLabs TTS
+2. **11-02-audio-processing.ipynb** - 音频处理与格式转换
 
 ## 学习目标
 
-- 掌握 TTS API 调用
-- 能实现语音合成
-- 能构建语音应用
+- 使用 ElevenLabs API
+- 使用 OpenAI TTS
+- 音频格式转换
+- 流式音频播放
 
-## 练习
+## 预计学习时间
 
-1. 实现语音朗读文章
-2. 构建多角色对话
-3. 集成到聊天机器人
+2 课时
